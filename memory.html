@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="memory.css">
+</head>
+
+<body>
+  <!--
+  <div class="card">
+    <div class="card-inner">
+      
+      <div class="card-front">
+        <h2>Front</h2>
+        <p>Click me!</p>
+      </div>
+      
+      <div class="card-back">
+        <h2>Back</h2>
+        <p>Here is the other side 😎</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <i class="fa-solid fa-users"></i>
+        
+  <i class="fa-solid fa-user"></i>
+  
+  
+  -->
+  
+  <div class="startingUI">
+    <div class="selectionUI">
+      
+      <!-- heading -->
+      <h2>Select Game Mode</h2>
+      
+      <!-- mode btn -->
+      <div class="modeSelectionBox">
+        <div class="selected" data-mode="p2mode">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        
+        <span>OR</span>
+        
+        <div data-mode="p1mode">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      
+      <!-- start btn -->
+      <div>
+        <button class="startBtn">Start Game</button>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="bg">
+    
+    <!-- -->
+    <div class="heading">
+      <div class="modeDiv">
+        Game-mode:
+        <div class="mode">Single player</div>
+      </div>
+      
+      <div class="statusDiv">
+        <div>Score: <span class="p1score">00</span></div>
+        <div>Moves: <span class="p1moves">00</span></div>
+        <div>Streaks: <span class="p1streak">00</span></div>
+      </div>
+      
+      <!-- in case of two players -->
+      <div class="p2ModeDiv">
+        <div class="statusPlayer">
+          
+          <div class="playerICcont1">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          
+          <div class="p1status">
+            <div>M: <span class="p1_2pmoves">00</span></div>
+            <div>S: <span class="p1_2pscore">00</span></div>
+          </div>
+          
+        </div>
+        
+        <span>VS</span>
+        
+        <div class="statusPlayer">
+          
+          <div class="p2status">
+            <div>M: <span class="p2_2pmoves">00</span></div>
+            <div>S: <span class="p2_2pscore">00</span></div>
+          </div>
+          
+          <div class="playerICcont2">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <!-- -->
+    <div class="cardContainer">
+      
+      <div class="cardHolder"></div>
+      <div class="cardHolder">2</div>
+      <div class="cardHolder">3</div>
+      <div class="cardHolder">4</div>
+      
+      <div class="cardHolder">5</div>
+      <div class="cardHolder">6</div>
+      <div class="cardHolder">7</div>
+      <div class="cardHolder">8</div>
+      
+      <div class="cardHolder">9</div>
+      <div class="cardHolder">10</div>
+      <div class="cardHolder">11</div>
+      <div class="cardHolder">12</div>
+      
+      <div class="cardHolder">13</div>
+      <div class="cardHolder">14</div>
+      <div class="cardHolder">15</div>
+      <div class="cardHolder">16</div>
+    </div>
+    
+  </div>
+  
+  <!-- FINAL POPUP -->
+  <div class="popupBg">
+    <div class="popUp">
+      
+      <!--
+      <h2>Game Finished</h2>
+      
+      <div class="gameMode">
+        <span>Game Mode:</span>
+        <span class="selectedMode">Single Player</span>
+      </div>
+      -->
+      
+      <!--
+      <div class="cup">
+        <span>🏆</span>
+      </div>
+      
+      <div class="popUpscoreDiv">Moves: 00</div>
+      <div class="popUpmovesDiv">Score: 00</div>
+      <div class="popUpstreakDiv">Streak: 00</div>
+      
+      <div class="timeDiv">
+        <div>Time Taken</div>
+        <div class="time">00:00:00</div>
+      </div>
+      -->
+      
+      <!-- TWO PLAYER UI 
+      <div class="statusGrid">
+        
+        <!-- PLAYER 1 STATS 
+        <div class="p1stat">
+          <div>Player - 1</div>
+          <div>Moves: <span>00</span></div>
+          <div>Score: <span>00</span></div>
+          <div>Streak: <span>00</span></div>
+        </div>
+        
+        <!-- PLAYER 2 STATS 
+        <div class="p2stat">
+          <div>Player - 1</div>
+          <div>Moves: <span>00</span></div>
+          <div>Score: <span>00</span></div>
+          <div>Streak: <span>00</span></div>
+        </div>
+        
+      </div>
+      
+      <div class="mode2p_winner">
+        Winner 🏆: Player
+      </div>
+      
+      <div class="timeDiv">
+        <div>Time Taken</div>
+        <div class="time">00:00:00</div>
+      </div>
+      
+      <!-- TWO PLAYER UI -->
+      
+      <!--  <button class="playAgainBtn" type="submit">Play Again</button> -->
+      
+    </div>
+  </div>
+  
+  <div class="loader">
+    <span class="loadText">Loading...</span>
+  </div>
+  
+  <script src="memory.js"></script>
+</body>
+
+</html>
